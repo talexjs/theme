@@ -1,18 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "es6",
+    "module": "commonjs",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "strict": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
+    "lib": ["es2018", "DOM"],
     "skipLibCheck": true,
-    "noEmit": true
+    "composite": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "sourceMap": true,
+    "typeRoots": ["node_modules/@types"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.vue", "build/**/*.ts"]
 }
