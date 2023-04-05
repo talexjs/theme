@@ -50,11 +50,13 @@ importers:
 
   packages/docs:
     specifiers:
+      '@talexjs/theme': workspace:^1.0.0
       vitepress: ^1.0.0-alpha.65
       vue: ^3.2.47
     dependencies:
       vue: 3.2.47
     devDependencies:
+      '@talexjs/theme': link:../theme
       vitepress: 1.0.0-alpha.65
 
   packages/theme:
