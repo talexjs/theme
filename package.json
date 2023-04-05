@@ -1,0 +1,19 @@
+{
+  "name": "theme",
+  "version": "1.0.0",
+  "description": "一套基于 vitepress 的简约 Reco 主题",
+  "private": true,
+  "scripts": {},
+  "keywords": [],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talexjs/theme.git"
+  },
+  "author": "fengwang",
+  "bugs": {
+    "url": "https://github.com/talexjs/theme/issues"
+  },
+  "homepage": "https://github.com/talexjs/theme#readme",
+  "license": "MIT"
+}
