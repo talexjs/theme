@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/talexjs/theme#readme",
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
   },
   "license": "MIT"
 }
