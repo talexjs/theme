@@ -1,6 +1,6 @@
 {
   "name": "theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一套基于 vitepress 的简约 Reco 主题",
   "private": true,
   "scripts": {
