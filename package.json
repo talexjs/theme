@@ -4,11 +4,14 @@
   "description": "一套基于 vitepress 的简约 Reco 主题",
   "private": true,
   "scripts": {
+    "test:run": "echo 1",
+    "publish": "changeset && changeset version && changeset publish",
     "prepare": "husky install",
     "commit": "cz"
   },
   "keywords": [],
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
