@@ -4,6 +4,7 @@
   "description": "一套基于 vitepress 的简约 Reco 主题",
   "private": true,
   "scripts": {
+    "build:theme": "pnpm -r --filter=@talexjs/theme build",
     "test:run": "echo 1",
     "publish": "changeset && changeset version && changeset publish",
     "prepare": "husky install",
