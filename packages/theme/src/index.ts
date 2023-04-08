@@ -2,6 +2,7 @@ import { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import LayoutPage from './components/LayoutPage.vue';
 import TimelinePage from './components/TimelinePage.vue';
+export * from './utils/index';
 export const RecoTheme: Theme = {
   ...DefaultTheme,
   Layout: LayoutPage,
@@ -10,5 +11,4 @@ export const RecoTheme: Theme = {
     ctx.app.component('TimelinePage', TimelinePage);
   },
 };
-
 export default RecoTheme;

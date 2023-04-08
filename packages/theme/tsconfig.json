@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
     "useDefineForClassFields": true,
+    "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
+    "noUnusedLocals": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "lib": ["es2018", "DOM"],
+    "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "composite": true,
     "outDir": "./dist",
@@ -17,6 +20,7 @@
     "strictNullChecks": true,
     "declaration": true,
     "sourceMap": true,
+    "allowJs": true,
     "typeRoots": ["node_modules/@types"]
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.vue", "build/**/*.ts"]
