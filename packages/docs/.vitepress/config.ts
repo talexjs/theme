@@ -1,2 +1,2 @@
 import { defineConfig } from '@talexjs/theme';
-export default defineConfig();
+export default defineConfig({ title: 'aaa' });

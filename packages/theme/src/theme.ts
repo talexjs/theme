@@ -1,7 +1,7 @@
 import { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
-import LayoutPage from './components/LayoutPage.vue';
-import TimelinePage from './components/TimelinePage.vue';
+import LayoutPage from './theme/LayoutPage.vue';
+import TimelinePage from './theme/TimelinePage.vue';
 export const RecoTheme: Theme = {
   ...DefaultTheme,
   Layout: LayoutPage,
