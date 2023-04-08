@@ -9,6 +9,8 @@
     "preview:docs": "pnpm -r --filter=docs preview",
     "build:theme": "pnpm -r --filter=@talexjs/theme build",
     "test:run": "echo 1",
+    "lint": "eslint --fix --ext .ts,.vue packages",
+    "format": "prettier --write \"packages/**/*.ts\" \"packages/**/*.vue\"",
     "publish": "changeset && changeset version && changeset publish",
     "prepare": "husky install",
     "commit": "cz"
