@@ -2,6 +2,7 @@
   "name": "@talexjs/theme",
   "version": "1.0.0",
   "description": "一套基于 vitepress 的简约 Reco 主题",
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "style": "./dist/style.css",
