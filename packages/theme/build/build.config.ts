@@ -15,12 +15,12 @@ const build = async () => {
     packages: 'external',
     chunkNames: 'chunks/[name]-[hash]',
     loader: { '.js': 'tsx' },
-    tsconfig: 'tsconfig.json',
+    format: 'esm',
+    target: ['esnext'],
     mainFields: ['module', 'main'],
     resolveExtensions: ['.ts', '.js', '.vue'],
     drop: ['debugger', 'console'],
     outdir: 'dist',
-    format: 'esm',
   });
 };
 
