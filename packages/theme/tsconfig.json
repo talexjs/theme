@@ -18,6 +18,11 @@
     "strictNullChecks": true,
     "declaration": true,
     "allowJs": true,
+    "paths": {
+      "@talexjs/theme/theme": ["./src/theme.ts"],
+      "@talexjs/theme": ["./src/index.ts"]
+    }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.vue"]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "node.d.ts"]
 }

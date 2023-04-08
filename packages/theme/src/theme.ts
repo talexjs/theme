@@ -2,7 +2,7 @@ import { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import LayoutPage from './theme/LayoutPage.vue';
 import TimelinePage from './theme/TimelinePage.vue';
-export const RecoTheme: Theme = {
+export const Themes: Theme = {
   ...DefaultTheme,
   Layout: LayoutPage,
   // eslint-disable-next-line
@@ -10,4 +10,4 @@ export const RecoTheme: Theme = {
     ctx.app.component('TimelinePage', TimelinePage);
   },
 };
-export default RecoTheme;
+export default Themes;

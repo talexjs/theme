@@ -61,11 +61,13 @@ importers:
 
   packages/theme:
     specifiers:
-      tsup: ^6.7.0
+      esbuild-plugin-vue-next: ^0.1.4
+      tsup: ' ^6.7.0'
       typescript: ^4.9.5
       vitepress: ^1.0.0-alpha.65
       vue: ^3.2.47
     devDependencies:
+      esbuild-plugin-vue-next: 0.1.4
       tsup: 6.7.0_typescript@4.9.5
       typescript: 4.9.5
       vitepress: 1.0.0-alpha.65
@@ -1878,6 +1880,10 @@ packages:
       through2: 4.0.2
     dev: true
 
+  /convert-source-map/1.9.0:
+    resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
+    dev: true
+
   /cosmiconfig-typescript-loader/4.3.0_6n2coyk7getfcou7yqpqzdwl2u:
     resolution: {integrity: sha512-NTxV1MFfZDLPiBMjxbHRwSh5LaLcPMwNdCutmnHJCKoVnlvldPWlllonKwrsRJ5pYZBIBGRWWU2tfvzxgeSW5Q==}
     engines: {node: '>=12', npm: '>=6'}
@@ -2147,6 +2153,15 @@ packages:
       is-callable: 1.2.7
       is-date-object: 1.0.5
       is-symbol: 1.0.4
+    dev: true
+
+  /esbuild-plugin-vue-next/0.1.4:
+    resolution: {integrity: sha512-n4DF5xY/GJ9DdRM4+MvV14Rrr+7xGhtv9/0xIxfzN6qSIMdXfZ6g4PVX735NYC7vGRr9KyZGRWST5jCyHQ6n5g==}
+    peerDependencies:
+      '@vue/compiler-sfc': '>=3.0.0'
+    dependencies:
+      convert-source-map: 1.9.0
+      hash-sum: 2.0.0
     dev: true
 
   /esbuild/0.17.15:
@@ -2812,6 +2827,10 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+    dev: true
+
+  /hash-sum/2.0.0:
+    resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
     dev: true
 
   /homedir-polyfill/1.0.3:

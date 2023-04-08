@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
-// import vuePlugin from 'esbuild-plugin-vue3';
+import pluginVue from 'esbuild-plugin-vue-next';
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: ['./src/index.ts', './src/theme.ts'],
   external: ['vitepress', 'vue'],
   format: ['cjs', 'esm'],
   shims: true,
@@ -13,4 +13,5 @@ export default defineConfig({
   treeshake: true,
   bundle: true,
   target: 'esnext',
+  esbuildPlugins: [pluginVue()],
 });
