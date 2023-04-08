@@ -19,5 +19,5 @@
     "declaration": true,
     "allowJs": true,
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.vue", "build/**/*.ts"]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.vue"]
 }
