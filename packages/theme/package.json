@@ -14,6 +14,7 @@
     "package.json"
   ],
   "scripts": {
+    "dev": "rm -rf dist && nodemon --exec ts-node ./build/build.config.ts",
     "build": "rm -rf dist && ts-node ./build/build.config.ts"
   },
   "devDependencies": {

@@ -4,9 +4,10 @@
   "description": "一套基于 vitepress 的简约 Reco 主题",
   "private": true,
   "scripts": {
-    "dev:docs": "pnpm run build:theme && pnpm -r --filter=docs dev",
+    "dev:docs": "pnpm -r --filter=docs dev",
     "build:docs": "pnpm run build:theme && pnpm -r --filter=docs build",
     "preview:docs": "pnpm run build:theme && pnpm -r --filter=docs preview",
+    "dev:theme": "pnpm -r --filter=@talexjs/theme dev",
     "build:theme": "pnpm -r --filter=@talexjs/theme build",
     "test:run": "echo 1",
     "lint": "eslint --fix --ext .ts,.vue packages",
